@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { getPokemonCardsByName } from '../data-access/getPokemon';
+import { getPokemonCardsByName, getPokemonBySet } from '../data-access/getPokemon';
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -14,7 +14,7 @@ export default function RootLayout() {
   });
 
   console.log('..........')
-  getPokemonCardsByName()
+  console.log(getPokemonBySet("base1"))
 
   if (!loaded) {
     // Async font loading only occurs in development.
