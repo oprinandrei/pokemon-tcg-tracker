@@ -28,16 +28,16 @@ export default function TabLayout() {
    }}
   >
    <Tabs.Screen
-    name="index"
+    name="my-collection"
     options={{
-     title: 'Home',
+     title: 'My collection',
      tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
     }}
    />
    <Tabs.Screen
-    name="explore"
+    name="browse-sets"
     options={{
-     title: 'Explore',
+     title: 'Browse sets',
      tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
     }}
    />
